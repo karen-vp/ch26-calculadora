@@ -1,0 +1,27 @@
+.calc-container{
+    height: 420px;
+    width: 300px;
+   
+}
+
+.main-container input[type=text]{
+    width: 100%;
+    height: 25%;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.btn-number{
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+.btn-second{
+    border-radius: 100%;
+    background-color: orange;
+}
+
+.btn-operator{
+    border-radius: 100%;
+    background-color: red;
+}

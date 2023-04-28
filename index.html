@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>CH26 - Calculadora</title>
+</head>
+
+<body>
+    <main class="container vh-100 justify-content-center text-center">
+        <h1>Calculadora</h1>
+
+        <div class="container calc-container rounded-3 ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cont-display">
+                        <div class="display">
+                            <div id="latest-value"></div>
+                            <div id="actual-value"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <button class="btn col-2 btn-second" onclick="displayer.deleteAll()">C</button>
+                <button class="btn col-2 btn-second" onclick="displayer.deleteValue()">&larr;</button>
+                <button class="btn col-2 btn-operator " value="power">^</button>
+                <button class="btn col-2 btn-operator " value="root">√x</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn col-2 btn-number">7</button>
+                <button type="button" class="btn col-2 btn-number">8</button>
+                <button type="button" class="btn col-2 btn-number">9</button>
+                <button type="button" class="btn col-2 btn-operator " value="divide">%</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn col-2 btn-number">6</button>
+                <button type="button" class="btn col-2 btn-number">5</button>
+                <button type="button" class="btn col-2 btn-number">4</button>
+                <button type="button" class="btn col-2 btn-operator " value="multiply">x</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn col-2 btn-number" value="1">3</button>
+                <button type="button" class="btn col-2 btn-number" value="2">2</button>
+                <button type="button" class="btn col-2 btn-number" value="3">1</button>
+                <button type="button" class="btn col-2 btn-operator " value="subtract">-</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn col-2 btn-number">0</button>
+                <button type="button" class="btn col-2 btn-number">.</button>
+                <button type="button" class="btn col-2 btn-operator " value="equal">=</button>
+                <button type="button" class="btn col-2 btn-operator " value="sum">+</button>
+            </div>
+
+        </div>
+    </main>
+
+   
+    <script type="text/javascript" src="./assets/js/Display.js"></script>
+    <script type="text/javascript" src="./assets/js/Calculator.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
